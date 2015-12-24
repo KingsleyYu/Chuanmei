@@ -119,6 +119,24 @@ hr {
   width: 1200px;
   padding: 0;
 }
+.container a {
+  outline: none;
+}
+.container a:link {
+  text-decoration: none;
+}
+.container a:visited {
+  text-decoration: none;
+}
+.container a:hover {
+  text-decoration: none;
+}
+.container a:active {
+  text-decoration: none;
+}
+.container a:focus {
+  text-decoration: none;
+}
 .tooltip {
   font-family: microsoft yahei, simsun;
 }
