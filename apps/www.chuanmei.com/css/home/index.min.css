@@ -1,0 +1,875 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：传美
+ 2. 文件名称：home/index.less (首页)
+ 3. 作者：KingsleyYu
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：mixins (混合)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 背景类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 圆角类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 块级化并居中类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1.  项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：display.less(混合 -> 显示方式类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：float.less(混合 -> 浮动类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 字体类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 文本类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：background.less(混合 -> 三角符号类)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：variables.less (整个应用的风格变量)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+块级颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+线条颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+字体颜色设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+字体设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+尺寸设置
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：pagination.less (分页器变量)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  margin-bottom: 88px;
+}
+.caption {
+  background-color: #fff;
+  height: 56px;
+  line-height: 56px;
+  padding-left: 20px;
+}
+.caption h3 {
+  margin: 0 0 0 10px;
+  display: inline-block;
+}
+.category {
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+  height: 60px;
+  font-size: 14px;
+  background-color: #F7F7F7;
+}
+.category ul {
+  *zoom: 1;
+  margin-bottom: 0px;
+  padding-left: 55px;
+}
+.category ul:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.category ul li {
+  position: relative;
+  height: 60px;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 15px;
+}
+.category ul li > a {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 40px;
+  padding: 5px 10px 10px;
+}
+.category ul li > a > span {
+  font-size: 15px;
+  color: #000000;
+}
+.category ul li > a:hover {
+  color: #000000;
+}
+.category ul li > a .number {
+  color: #7ab9e0;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.category ul li.on > a {
+  background-color: #3ea2d9;
+  color: #fff;
+}
+.category ul li.on > a > span {
+  color: #fff;
+}
+.category ul li.on > a > span.number {
+  font-size: 16px;
+}
+.category ul li.on .arrow {
+  display: block;
+}
+.category ul li .arrow {
+  display: none;
+}
+.category ul li .arrow i {
+  border-bottom-color: #F7F7F7;
+}
+.category .tongbu {
+  line-height: 50px;
+  color: #fff;
+  background-color: #3ea2d9;
+  width: 75px;
+  padding: 5px 10px 10px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+.filter-panel {
+  padding: 20px 10px 0px 5px;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: none;
+  background-color: #F7F7F7;
+  *zoom: 1;
+}
+.filter-panel:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-panel .open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #368CE3;
+  border-color: none;
+}
+.filter-panel .caret {
+  margin-left: 3px;
+  color: #368CE3;
+}
+.filter-panel .btn-primary {
+  background-color: #3ea2d9;
+  border: none;
+}
+.filter-panel .btn-default:hover,
+.filter-panel .btn-default:active {
+  background-color: #fff;
+}
+.filter-panel > div {
+  height: 40px;
+  margin-bottom: 5px;
+  *zoom: 1;
+}
+.filter-panel > div:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-panel > div > ul {
+  float: left;
+  *zoom: 1;
+}
+.filter-panel > div > ul:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-panel > div > ul > li {
+  font-size: 14px;
+  float: left;
+  margin-right: 5px;
+}
+.filter-panel > div > ul > li.conds-item-bbmc .input-group .input-group-btn .btn {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.filter-panel > div > ul > li.conds-item-bbmc .input-group .form-control {
+  margin-left: 5px;
+  width: 255px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.filter-panel > div > ul > li.conds-item {
+  width: 350px;
+}
+.filter-panel > div > ul > li.conds-item .dropdown-menu {
+  min-width: 50px;
+  width: 100px;
+}
+.filter-panel > div > ul > li.conds-item .dropdown-menu > li > a {
+  padding: 3px 15px;
+}
+.filter-panel > div > ul > li.conds-item-mobile {
+  width: 225px;
+}
+.filter-panel > div > ul > li.conds-item-order {
+  width: 92px;
+}
+.filter-panel > div.filter-item a {
+  color: #637f9d;
+  margin-right: 10px;
+}
+.filter-panel > div.filter-item .btn-primary {
+  color: #fff;
+}
+.filter-panel > div.filter-item .btn-group {
+  margin-right: 10px;
+}
+.filter-panel > div.filter-item .btn-group a {
+  margin-left: -1px;
+  margin-right: 0px;
+}
+.filter-panel > div.filter-item .btn-group a.on {
+  background-color: #368CE3;
+  color: #fff;
+}
+.filter-panel > div .type {
+  font-size: 14px;
+  width: 120px;
+  text-align: right;
+  padding-top: 5px;
+  margin-right: 0px !important;
+  color: #434343;
+}
+.filter-panel > div .type .remark {
+  font-size: 12px;
+  color: #AEAEAE;
+}
+.filter-panel > div .selected-text {
+  font-size: 14px;
+}
+.filter-panel > div .amount .type {
+  width: 75px;
+}
+.filter-result {
+  background-color: #fff;
+}
+.filter-result .tab {
+  *zoom: 1;
+  height: 43px;
+  border-bottom: 1px solid #eaeaea;
+}
+.filter-result .tab:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .tab ul {
+  *zoom: 1;
+}
+.filter-result .tab ul:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .tab ul li {
+  float: left;
+}
+.filter-result .tab > div {
+  height: 42px;
+  *zoom: 1;
+  font-size: 14px;
+}
+.filter-result .tab > div:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .tab .tabs-handle {
+  padding-left: 15px;
+  margin-right: 200px;
+  border-bottom: 1px solid #eee;
+}
+.filter-result .tab .tabs-handle li {
+  background-color: #fff;
+  border-top: 3px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  line-height: 37px;
+  text-align: center;
+  width: 110px;
+}
+.filter-result .tab .tabs-handle li.on {
+  border-top-color: #3ea2d9;
+  border-left-color: #eee;
+  border-right-color: #eee;
+  position: relative;
+  top: 1px;
+}
+.filter-result .tab .op1 {
+  margin-left: 200px;
+  padding: 12px;
+}
+.filter-result .tab .op1 li {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.filter-result .tab .op1 li.dropdown {
+  margin-top: -5px;
+}
+.filter-result .tab .op1 .sw {
+  color: #7ab9e0;
+  width: 40px;
+  height: 40px;
+  padding: 10px 12px;
+  display: inline-block;
+  *display: inline ;
+  *zoom: 1 ;
+  background-color: #f5f5f5;
+  border-top: 1px solid #f5f5f5;
+  border-left: 1px solid #bbbbbb;
+  border-right: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: -13px;
+  margin-left: 20px;
+}
+.filter-result .tab .op1 .sw > i {
+  font-size: 12px;
+  color: #bbbbbb;
+}
+.filter-result .title {
+  width: 100%;
+}
+.filter-result .title td {
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.filter-result .page {
+  *zoom: 1;
+  height: 40px;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+}
+.filter-result .page:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .page .pull-left > ul {
+  *zoom: 1;
+}
+.filter-result .page .pull-left > ul:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .page .pull-left > ul > li {
+  float: left;
+  margin-right: 20px;
+  color: #000;
+  padding: 3px 10px;
+}
+.filter-result .page .pull-left > ul > li > span {
+  font-size: 14px;
+}
+.filter-result .page .pull-left > ul > li > span.number {
+  margin: 0 3px;
+}
+.filter-result .page .pull-left > ul > li.total {
+  font-size: 15px;
+}
+.filter-result .page .pull-left > ul > li.blue {
+  color: #7ab9e0;
+}
+.filter-result .data-panel {
+  padding: 5px 5px 40px;
+}
+.filter-result .data-panel .row {
+  border-bottom: 1px solid #d8efff;
+  border-right: 1px solid #d8efff;
+  border-left: 1px solid #d8efff;
+  font-size: 14px;
+  margin: 0px;
+}
+.filter-result .data-panel .row > table {
+  width: 100%;
+}
+.filter-result .data-panel .row > table tr td {
+  padding: 5px;
+  border-right: 1px solid #d8efff;
+  border-bottom: 1px solid #d8efff;
+}
+.filter-result .data-panel .row > table tr .index {
+  width: 4%;
+  padding-bottom: 40px;
+}
+.filter-result .data-panel .row > table tr .msg {
+  width: 13%;
+}
+.filter-result .data-panel .row > table tr .msg .name > span {
+  /*
+    *截取文本用省略号追加在后面
+    */
+  overflow: hidden ;
+  white-space: nowrap ;
+  text-overflow: ellipsis ;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis ;
+  -moz-binding: url("ellipsis.xml#ellipsis");
+}
+.filter-result .data-panel .row > table tr .msg .tip {
+  padding: 5px 20px;
+}
+.filter-result .data-panel .row > table tr .reciver-info {
+  width: 20%;
+  color: #000;
+}
+.filter-result .data-panel .row > table tr .remark {
+  width: 15%;
+  color: #ff1e1e;
+  text-align: left;
+}
+.filter-result .data-panel .row > table tr .tpl {
+  width: 6%;
+}
+.filter-result .data-panel .row > table tr .tpl .count {
+  color: #ff1e1e;
+  font-size: 16px;
+  font-weight: 600;
+}
+.filter-result .data-panel .row > table tr .date {
+  padding-bottom: 10px;
+}
+.filter-result .data-panel .row > table tr .date .btn {
+  border: none;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+}
+.filter-result .data-panel .row > table tr .dayin-state {
+  width: 12%;
+  padding-bottom: 25px;
+}
+.filter-result .data-panel .row > table tr .dayin-state .text {
+  color: #7ab9e0;
+  font-size: 13px;
+}
+.filter-result .data-panel .row > table tr .order-no {
+  width: 15%;
+  padding-bottom: 25px;
+}
+.filter-result .data-panel .row > table tr .order-no input {
+  width: 120px;
+  background-color: #fff;
+  padding: 2px 5px;
+}
+.filter-result .data-panel .row > table tr .order-no a > i {
+  font-size: 12px;
+  color: #6cae4b;
+}
+.filter-result .data-panel .row > table tr .op {
+  padding-bottom: 30px;
+  border-right: none;
+}
+.filter-result .data-panel .row > table tr .op a {
+  color: #7ab9e0;
+  font-size: 12px;
+}
+.filter-result .data-panel .row .image-list {
+  padding: 10px;
+  *zoom: 1;
+}
+.filter-result .data-panel .row .image-list:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .data-panel .row .image-list .pull-left {
+  width: 1100px;
+}
+.filter-result .data-panel .row .image-list dl {
+  *zoom: 1;
+  float: left;
+  width: 220px;
+  margin-bottom: 10px;
+}
+.filter-result .data-panel .row .image-list dl:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .data-panel .row .image-list dl > dt {
+  position: relative;
+  float: left;
+  width: 80px;
+  text-align: center;
+}
+.filter-result .data-panel .row .image-list dl > dt img {
+  height: 60px;
+  width: 60px;
+}
+.filter-result .data-panel .row .image-list dl > dt > a {
+  cursor: pointer;
+}
+.filter-result .data-panel .row .image-list dl > dd {
+  width: 140px;
+  margin-left: 80px;
+}
+.filter-result .data-panel .row .image-list dl > dd > a {
+  font-size: 12px;
+  color: #000;
+  height: 56px;
+  margin-top: -1px;
+  display: inline-block;
+  *display: inline ;
+  *zoom: 1 ;
+}
+.filter-result .data-panel .row .image-list dl > dd > a .title {
+  /*
+    *截取文本用省略号追加在后面
+    */
+  overflow: hidden ;
+  white-space: nowrap ;
+  text-overflow: ellipsis ;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis ;
+  -moz-binding: url("ellipsis.xml#ellipsis");
+  font-size: 14px;
+}
+.filter-result .data-panel .row .image-list dl > dd > a .number {
+  color: #ff1e1e;
+}
+.filter-result .data-panel .row .image-list dl > dd > a:hover {
+  text-decoration: none;
+}
+.filter-result .data-panel .row .image-list dl.selected .overlay {
+  display: block;
+}
+.filter-result .data-panel .row .image-list .pull-right > a {
+  color: #7ab9e0;
+  font-size: 12px;
+}
+.filter-result .data-panel .row .image-list .overlay {
+  width: 65px;
+  height: 65px;
+  z-index: 100;
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: 8px;
+  filter: alpha(opacity=80);
+  opacity: 0.7;
+  overflow: hidden;
+  background-color: #000;
+}
+.filter-result .data-panel .row .detail {
+  padding: 15px;
+  background-color: #fff;
+  *zoom: 1;
+}
+.filter-result .data-panel .row .detail:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .data-panel .row .detail > table {
+  width: 100%;
+  position: relative;
+  height: auto;
+  height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+.filter-result .data-panel .row .detail > table .order-info {
+  width: 25%;
+  border-right: 1px solid #fff;
+}
+.filter-result .data-panel .row .detail > table .order-info .info {
+  position: absolute;
+  top: 15px;
+  left: 2%;
+}
+.filter-result .data-panel .row .detail > table .order-info .info p {
+  font-size: 14px;
+  margin: 10px;
+}
+.filter-result .data-panel .row .detail > table .order-info .info p .order-id {
+  color: #7ab9e0;
+}
+.filter-result .data-panel .row .detail > table .order-info .op {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+}
+.filter-result .data-panel .row .detail > table .order-info .op > a {
+  font-size: 15px;
+  color: #7ab9e0;
+  margin-right: 20px;
+}
+.filter-result .data-panel .row .detail > table .product-info {
+  width: 75%;
+}
+.filter-result .data-panel .row .detail > table .product-info > table {
+  width: 100%;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr {
+  border-bottom: 1px solid #fff;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr .strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td {
+  font-size: 14px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.chb {
+  width: 5%;
+  text-align: center;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info {
+  width: 45%;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl {
+  *zoom: 1;
+  float: left;
+  width: 485px;
+  margin-bottom: 5px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl > dt {
+  float: left;
+  width: 80px;
+  text-align: center;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl > dt img {
+  height: 60px;
+  width: 60px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl > dd {
+  width: 400px;
+  margin-left: 80px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl .title {
+  /*
+    *截取文本用省略号追加在后面
+    */
+  overflow: hidden ;
+  white-space: nowrap ;
+  text-overflow: ellipsis ;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis ;
+  -moz-binding: url("ellipsis.xml#ellipsis");
+  font-size: 14px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl .code {
+  font-size: 12px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl .quantity {
+  font-size: 12px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.info dl .quantity .number {
+  color: #ff1e1e;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.quantity {
+  width: 16%;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.quantity .count {
+  color: #ff1e1e;
+  font-weight: 600;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.quantity .state {
+  color: #ff1e1e;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.pay {
+  width: 14%;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.pay p {
+  margin: 10px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.text {
+  width: 20%;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.item td.text input {
+  width: 120px;
+  padding: 3px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.remark {
+  border-bottom: none;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.remark td {
+  padding: 20px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.summary {
+  font-size: 15px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.summary td {
+  padding: 20px 0px 20px 20px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.summary span.youhui {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.filter-result .data-panel .row .detail > table .product-info > table tr.summary span.number {
+  color: #ff1e1e;
+}
+.filter-result .data-panel .row .detail .pull-left {
+  width: 220px;
+}
+.filter-result .data-panel .row.blue > table {
+  background-color: #e3f3fe;
+}
+.filter-result .data-panel .row.blue > table td {
+  border-bottom: none;
+  border-right: 1px solid #fff;
+}
+.filter-result .data-panel .row.blue > table td.op {
+  border-right: none;
+}
+.filter-result .data-panel .row.blue > table td.date .btn {
+  background-color: #e3f3fe;
+}
+.filter-result .data-panel .row.selected {
+  border: 1px solid #7ab9e0;
+}
+.fix-bar {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  left: 0;
+  padding: 7px;
+  height: 85px;
+  background-color: #e7e7e7;
+  position: fixed;
+  z-index: 999;
+}
+.fix-bar .container {
+  *zoom: 1;
+  font-size: 14px;
+  height: 85px;
+  padding: 30px 20px;
+  background-color: #f5f5f5;
+}
+.fix-bar .container:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.fix-bar .container .btn {
+  background-color: #3ea2d9;
+  color: #fff;
+}
+.fix-bar .container .check-state {
+  margin-top: 5px;
+  width: 200px;
+}
+.fix-bar .container .check-state .check-all {
+  font-size: 16px;
+}
+.fix-bar .container .check-state .blue {
+  color: #7ab9e0;
+}
+.fix-bar .container .mid .btn {
+  background-color: #6bbfed;
+  padding: 10px 20px;
+}
+.fix-bar .container .mid .btn-kuaididan {
+  background-color: #d94638;
+  margin-right: 10px;
+}
+.fix-bar .container .mid .btn-fahuodan {
+  background-color: #fd9826;
+  margin-right: 10px;
+}
+.fix-bar .container .mid .btn-plfh .dropdown-toggle {
+  padding: 10px 5px;
+}
+.fix-bar .container .mid .btn-plfh b {
+  border-width: 7px;
+  border-color: transparent transparent #fff transparent ;
+  margin: -7px 0px 0px 0px;
+}

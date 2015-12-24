@@ -1,0 +1,83 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：传美科技
+ 2. 文件名称：header (页面头部)
+ 3. 作者：KingsleyYu
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.header {
+    background: #3ea2d9;
+    .clearfix();
+    height: 60px;
+    font-size: 22px;
+    .logo-location {
+        float: left;
+        width: 150px;
+        img {
+            border: none;
+        }
+    }
+    .btn-default {
+        background-color: #3ea2d9;
+        border: none;
+        color: #fff;
+        &>span {
+            font-size: 22px;
+            .iconfont {
+                font-size: 15px;
+                margin-left: 5px;
+            }
+        }
+        &:active,
+        &:focus {
+            background-color: inherit;
+            border: none;
+        }
+
+        &:hover{
+            background-color: inherit;
+        }
+    }
+
+    .open>.dropdown-toggle.btn-default {
+        color: #fff;
+        background-color: inherit;
+        border-color: none;
+        &:hover{
+            background-color: #0368CE;
+        }
+    }
+
+    .dropdown-menu {
+        font-size: 20px;
+        padding: 0px;
+        min-width: 106px;
+        margin-top: 5px;
+        &>li {
+            background-color: #368CE3;
+            &>a {
+                color: #fff;
+                &:hover {
+                    background-color: #3300CC;
+                }
+            }
+        }
+    }
+    .nav-bar {
+        .clearfix();
+        color: #fff;
+        font-weight: 400;
+        &>li {
+            float: left;
+            line-height: 60px;
+            margin-right: 5px;
+            height: 60px;
+            &>a {
+                padding: 8px 5px;
+                color: #fff;
+            }
+            &:hover {
+                background-color: #0368CE;
+            }
+        }
+    }
+}

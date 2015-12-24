@@ -1,0 +1,60 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：传美打印
+ 2. 文件名称：toper (页面顶部条)
+ 3. 作者：KingsleyYu
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../mixins.less";
+@import "../variables.less";
+.toper {
+    font-size: 12px;
+    background: #fff;
+    height: 33px;
+    .btn {
+        background-color: #fff;
+        border: none;
+        padding-top: 5px;
+    }
+    .bind {
+        height: 23px;
+        color: @font-selected-color;
+        margin-left: 30px;
+        .inline-block();
+        line-height: 33px;
+    }
+    .pull-right {
+        height: 33px;
+        color: @gray-font-color;
+        .clearfix();
+        &>ul {
+            .clearfix();
+            line-height: 33px;
+            li {
+                float: left;
+                .light {
+                    color: @red-font-color;
+                    font-weight: 400;
+                }
+                .op {
+                    .inline-block();
+                    height: 23px;
+                    background-color: #BD362F;
+                    color: #fff;
+                    .border-radius(3px);
+                    padding: 0px 10px;
+                    margin-left: 15px;
+                    line-height: 23px;
+                }
+                &.pipe {
+                    font-weight: 400;
+                    color: @gray-font-color;
+                    margin: 0px 15px;
+                }
+            }
+        }
+    }
+
+    .open .dropdown-menu{
+        font-size: 12px;
+    }
+}
