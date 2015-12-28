@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  1. 项目名称：传美打印
- 2. 文件名称：manage/templateSettings.less (模板设置)
+ 2. 文件名称：manage/editTemplate.less (编辑模板)
  3. 作者：KingsleyYu
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -73,39 +73,177 @@
  2. 文件名称：pagination.less (分页器变量)
  3. 作者：zhaohuagang@guanaihui.com
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #fff;
+}
 .content .caption {
-  border-bottom: 1px solid #bbbbbb;
   padding-left: 20px;
   height: 55px;
+  border-bottom: 1px solid #bbbbbb;
+}
+.content .caption img {
+  margin-right: 5px;
 }
 .content .caption h3 {
   display: inline-block;
   *display: inline ;
   *zoom: 1 ;
   margin-right: 25px;
+  margin-top: 10px;
 }
 .content .caption a {
   margin-right: 10px;
 }
-.content .template-data {
-  padding-left: 40px;
-  padding-top: 20px;
+.content .cond-items {
+  padding: 10px 0px 0px 35px;
 }
-.content .template-data table {
-  width: 100%;
+.content .cond-items > ul {
+  *zoom: 1;
+}
+.content .cond-items > ul:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.content .cond-items > ul > li {
+  height: 40px;
+  float: left;
+  font-size: 14px;
+  line-height: 40px;
+}
+.content .cond-items > ul > li.cond-label {
+  width: 100px;
+  text-align: right;
+}
+.content .cond-items > ul > li > input {
+  height: 30px;
+  padding: 2px 5px;
+  line-height: 30px;
+}
+.content .font {
+  border: 1px solid #bbbbbb;
+  padding-top: 5px;
+}
+.content .font > ul {
+  *zoom: 1;
+}
+.content .font > ul:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.content .font > ul > li {
+  height: 40px;
+  float: left;
+  font-size: 14px;
+  line-height: 40px;
+}
+.content .font > ul > li.cond-label {
+  width: 100px;
+  text-align: right;
+}
+.content .font > ul > li > input {
+  height: 30px;
+  padding: 2px 5px;
+  line-height: 30px;
+}
+.content .font > ul > li.select-label {
+  width: 160px;
+}
+.content .font > ul > li .active-tpl {
+  width: 80px;
+  text-align: left;
+}
+.content .font .dropdown {
+  width: 90px;
+}
+.content .tpl {
+  margin-top: 5px;
+  height: 600px;
+  *zoom: 1;
+}
+.content .tpl:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.content .tpl > .pull-left {
+  height: 600px;
+  border: 1px solid #bbbbbb;
+  width: 40%;
+  padding: 10px;
+}
+.content .tpl > .pull-left .tpl-content {
+  height: 580px;
+  border: 1px solid red;
+}
+.content .tpl .info {
+  width: 19%;
+  height: 600px;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.content .tpl .info > dl {
   font-size: 14px;
   text-align: center;
-  border: 1px solid #000;
 }
-.content .template-data table tr {
-  height: 30px;
+.content .tpl .info > dl dt {
+  *zoom: 1;
+  height: 35px;
 }
-.content .template-data table td {
-  border: 1px solid #000;
+.content .tpl .info > dl dt:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
 }
-.content .template-data table td.name {
-  width: 20%;
+.content .tpl .info > dl dt > div {
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-left: -30px;
 }
-.content .template-data table td.op {
+.content .tpl .info > dl dt > .pull-left {
+  width: 80%;
+}
+.content .tpl .info > dl dt > .pull-right {
+  margin-right: 10px;
+}
+.content .tpl .info > dl dt:hover {
+  background-color: #F7F7F7;
+  cursor: pointer;
+}
+.content .tpl .info > dl dd {
+  display: none;
+  color: #bbbbbb;
+  padding-left: 10px;
+}
+.content .tpl .info > dl dd > span {
+  margin-right: 20px;
+}
+.content .tpl .info > dl.on dt {
+  background-color: #F7F7F7;
+}
+.content .tpl .info > dl.on dd {
+  display: block;
+}
+.content .tpl > .pull-right {
+  height: 600px;
+  border: 1px solid #bbbbbb;
   width: 40%;
+}
+.content .dropdown-menu {
+  min-width: 100px;
 }

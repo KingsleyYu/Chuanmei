@@ -1,0 +1,83 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：传美打印
+ 2. 文件名称：manage/addTemplate.less (新增模板)
+ 3. 作者：KingsleyYu
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../mixins.less";
+@import "../variables.less";
+body {
+    background-color: #fff;
+}
+
+.content {
+    .caption {
+        padding-left: 20px;
+        height: 55px;
+        img {
+            margin-right: 5px;
+        }
+        h3 {
+            .inline-block();
+            margin-right: 25px;
+            margin-top: 10px;
+        }
+        a {
+            margin-right: 10px;
+        }
+    }
+    .tabs {
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #bbbbbb;
+        height: 60px;
+    }
+    .cond-items {
+        padding: 10px 0px 0px 55px;
+        .item {
+            font-size: 14px;
+            &>ul {
+                height: 50px;
+                .clearfix();
+                li {
+                    margin-right: 15px;
+                    float: left;
+                    line-height: 50px;
+                }
+            }
+        }
+        .item-tpl {
+            li {
+                a {
+                    height: 30px;
+                    .border-radius(3px);
+                    color: #000;
+                    padding: 5px;
+                }
+                &.on {
+                    a {
+                        background-color: #3ea2d9;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .dropdown-menu {
+            min-width: 100px;
+        }
+    }
+    .op {
+        border: 1px solid #bbbbbb;
+        height: 500px;
+        .pull-left {
+            width: 300px;
+            padding-left: 100px;
+            padding-top: 15%;
+        }
+        .pull-right {
+            margin: 5px 15px;
+            border: 1px solid #bbbbbb;
+            height: 450px;
+            width: 500px;
+        }
+    }
+}

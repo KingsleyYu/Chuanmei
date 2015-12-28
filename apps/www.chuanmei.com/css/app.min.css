@@ -154,6 +154,44 @@ hr {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.wrapper {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.wrapper .aside {
+  background-color: #f1f1f1;
+  color: #000000;
+  font-size: 16px;
+  width: 170px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrapper .aside li {
+  padding: 10px 0 10px 20px;
+}
+.wrapper .aside li > a {
+  color: #000000;
+}
+.wrapper .aside li.on {
+  background-color: #3ea2d9;
+}
+.wrapper .aside li.on > a {
+  color: #fff;
+}
+.wrapper .aside li:hover {
+  background-color: #3ea2d9;
+}
+.wrapper .aside li:hover > a {
+  color: #fff;
+}
+.wrapper .content {
+  background-color: #fff;
+  margin-left: 175px;
+  padding-bottom: 5px;
+}
 .transparent {
   background-color: transparent ;
   border: 1px solid transparent ;
@@ -2049,174 +2087,6 @@ hr {
   color: #cccccc;
 }
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1. 项目名称：guanaihui前端MVC框架
- 2. 文件名称：验证控件
- 3. 作者：zhaohuagang@guanaihui.com
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* Z-INDEX */
-.formError {
-  z-index: 990;
-}
-.formError .formErrorContent {
-  z-index: 991;
-}
-.formError .formErrorArrow {
-  z-index: 996;
-}
-.ui-dialog .formError {
-  z-index: 5000;
-}
-.ui-dialog .formError .formErrorContent {
-  z-index: 5001;
-}
-.ui-dialog .formError .formErrorArrow {
-  z-index: 5006;
-}
-.inputContainer {
-  position: relative;
-  float: left;
-}
-.formError {
-  position: absolute;
-  top: 300px;
-  left: 300px;
-  display: block;
-  cursor: pointer;
-  text-align: left;
-}
-.formError.inline {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: inline-block;
-}
-.ajaxSubmit {
-  padding: 20px;
-  background: #55ea55;
-  border: 1px solid #999;
-  display: none;
-}
-.formError .formErrorContent {
-  width: 100%;
-  background: #ee0101;
-  position: relative;
-  color: #fff;
-  min-width: 120px;
-  font-size: 11px;
-  border: 2px solid #ddd;
-  box-shadow: 0 0 6px #000;
-  -moz-box-shadow: 0 0 6px #000;
-  -webkit-box-shadow: 0 0 6px #000;
-  -o-box-shadow: 0 0 6px #000;
-  padding: 4px 10px 4px 10px;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-.formError.inline .formErrorContent {
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  -o-box-shadow: none;
-  border: none;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-}
-.greenPopup .formErrorContent {
-  background: #33be40;
-}
-.blackPopup .formErrorContent {
-  background: #393939;
-  color: #FFF;
-}
-.formError .formErrorArrow {
-  width: 15px;
-  margin: -2px 0 0 13px;
-  position: relative;
-}
-body[dir='rtl'] .formError .formErrorArrow,
-body.rtl .formError .formErrorArrow {
-  margin: -2px 13px 0 0;
-}
-.formError .formErrorArrowBottom {
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  -o-box-shadow: none;
-  margin: 0px 0 0 12px;
-  top: 2px;
-}
-.formError .formErrorArrow div {
-  border-left: 2px solid #ddd;
-  border-right: 2px solid #ddd;
-  box-shadow: 0 2px 3px #444;
-  -moz-box-shadow: 0 2px 3px #444;
-  -webkit-box-shadow: 0 2px 3px #444;
-  -o-box-shadow: 0 2px 3px #444;
-  font-size: 0px;
-  height: 1px;
-  background: #ee0101;
-  margin: 0 auto;
-  line-height: 0;
-  font-size: 0;
-  display: block;
-}
-.formError .formErrorArrowBottom div {
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  -o-box-shadow: none;
-}
-.greenPopup .formErrorArrow div {
-  background: #33be40;
-}
-.blackPopup .formErrorArrow div {
-  background: #393939;
-  color: #FFF;
-}
-.formError .formErrorArrow .line10 {
-  width: 13px;
-  border: none;
-}
-.formError .formErrorArrow .line9 {
-  width: 11px;
-  border: none;
-}
-.formError .formErrorArrow .line8 {
-  width: 11px;
-}
-.formError .formErrorArrow .line7 {
-  width: 9px;
-}
-.formError .formErrorArrow .line6 {
-  width: 7px;
-}
-.formError .formErrorArrow .line5 {
-  width: 5px;
-}
-.formError .formErrorArrow .line4 {
-  width: 3px;
-}
-.formError .formErrorArrow .line3 {
-  width: 1px;
-  border-left: 2px solid #ddd;
-  border-right: 2px solid #ddd;
-  border-bottom: 0 solid #ddd;
-}
-.formError .formErrorArrow .line2 {
-  width: 3px;
-  border: none;
-  background: #ddd;
-}
-.formError .formErrorArrow .line1 {
-  width: 1px;
-  border: none;
-  background: #ddd;
-}
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  1. 项目名称：传美打印
  2. 文件名称：toper (页面顶部条)
  3. 作者：KingsleyYu
@@ -2255,7 +2125,6 @@ body.rtl .formError .formErrorArrow {
 }
 .toper .pull-right > ul {
   *zoom: 1;
-  line-height: 33px;
 }
 .toper .pull-right > ul:after {
   clear: both ;
@@ -2266,6 +2135,7 @@ body.rtl .formError .formErrorArrow {
   visibility: hidden ;
 }
 .toper .pull-right > ul li {
+  line-height: 33px;
   float: left;
 }
 .toper .pull-right > ul li .light {
@@ -2399,6 +2269,7 @@ body.rtl .formError .formErrorArrow {
   background-color: #77c86a;
   color: #fff !important;
 }
+/*箭头*/
 .arrow,
 .arrow i {
   display: block;
@@ -2420,4 +2291,315 @@ body.rtl .formError .formErrorArrow {
 .arrow i {
   top: 1px;
   border-bottom-color: #fff;
+}
+/*字体颜色*/
+.cm_important {
+  color: #bd362f;
+}
+.cm_danger {
+  color: #d94638;
+}
+.cm_warn {
+  color: #fd9826;
+}
+.cm_info {
+  color: #6bbfed;
+}
+.cm_c {
+  color: #0085d7;
+}
+.cm_disabled {
+  color: #999;
+}
+.cm_success {
+  color: #4b2;
+}
+.cm_black {
+  color: #000;
+}
+.cm_normal {
+  color: #333;
+}
+.grey-title {
+  color: #777;
+}
+.link-light {
+  color: blue;
+}
+/**
+* 按钮
+*/
+.cm_btn {
+  color: #fff;
+  padding: 5px 9px 6px 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 30px;
+}
+a.cm_btn:link {
+  color: #fff;
+}
+a.cm_btn:hover {
+  color: #fff;
+}
+.cm_btn_important {
+  background-color: #bd362f;
+  border: 1px solid #bd362f;
+}
+.cm_btn_danger {
+  background-color: #d94638;
+  border: 1px solid #d94638;
+}
+.cm_btn_warn {
+  background-color: #fd9826;
+  border: 1px solid #fd9826;
+}
+.cm_btn_info {
+  background-color: #6bbfed;
+  border: 1px solid #6bbfed;
+}
+.cm_btn_c {
+  background-color: #0085D7;
+  border: 1px solid #0085D7;
+}
+.cm_btn_disabled {
+  padding: 7px 9px 7px 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #999;
+  background-color: #f3f3f3;
+  border: 1px solid #e6e6e6;
+  line-height: 30px;
+}
+.cm_btn_disabled:link {
+  color: #999;
+}
+.cm_btn_disabled:hover {
+  color: #999;
+}
+.cm_btn_success {
+  background-color: #4b2;
+  border: 1px solid #4b2;
+}
+.cm_btn_unfill {
+  padding: 5px 9px 6px 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 30px;
+}
+.cm_btn_unfill_important {
+  color: #bd362f;
+  border: 1px solid #bd362f;
+}
+.cm_btn_unfill_important:link {
+  color: #bd362f;
+}
+.cm_btn_unfill_important:hover {
+  color: #bd362f;
+}
+.cm_btn_unfill_danger {
+  color: #d94638;
+  border: 1px solid #d94638;
+}
+.cm_btn_unfill_danger:link {
+  color: #d94638;
+}
+.cm_btn_unfill_danger:hover {
+  color: #d94638;
+}
+.cm_btn_unfill_warn {
+  color: #fd9826;
+  border: 1px solid #fd9826;
+}
+.cm_btn_unfill_warn:link {
+  color: #fd9826;
+}
+.cm_btn_unfill_warn:hover {
+  color: #fd9826;
+}
+.cm_btn_unfill_info {
+  color: #6bbfed;
+  border: 1px solid #6bbfed;
+}
+.cm_btn_unfill_info:link {
+  color: #6bbfed;
+}
+.cm_btn_unfill_info:hover {
+  color: #6bbfed;
+}
+.cm_btn_unfill_c {
+  color: #0085D7;
+  border: 1px solid #0085D7;
+}
+.cm_btn_unfill_c:link {
+  color: #0085D7;
+}
+.cm_btn_unfill_c:hover {
+  color: #0085D7;
+}
+.cm_btn_unfill_success {
+  color: #4b2;
+  border: 1px solid #4b2;
+}
+.cm_btn_unfill_success:link {
+  color: #4b2;
+}
+.cm_btn_unfill_success:hover {
+  color: #4b2;
+}
+.cm_btn_unfill_disabled {
+  padding: 5px 9px 6px 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #c6c6c6;
+  color: #c6c6c6;
+  background: #f3f3f3;
+  line-height: 30px;
+}
+.cm_btn_unfill_disabled:link {
+  color: #c6c6c6;
+}
+.cm_btn_unfill_disabled:hover {
+  color: #c6c6c6;
+}
+.cm_btn_unfill_nomal {
+  color: #333;
+  border: 1px solid #ccc;
+}
+.cm_btn_unfill_nomal:link {
+  color: #333;
+}
+.cm_btn_unfill_nomal:hover {
+  color: #333;
+}
+.cm_btn_xlarge {
+  padding: 12px 17px;
+  font-size: 16px;
+  line-height: 45px;
+}
+.cm_btn_large {
+  padding: 9px 12px;
+  font-size: 14px;
+  line-height: 37px;
+}
+.cm_btn_small {
+  padding: 3px 6px 4px 6px;
+  line-height: 26px;
+}
+.cm-ft-16 {
+  font-size: 16px;
+}
+.cm-ft-18 {
+  font-size: 18px;
+}
+.cm-ft-14 {
+  font-size: 14px;
+}
+.cm-input-normal {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+/*/Tap 组件样式/*/
+.tab-level1 {
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+  height: 60px;
+  font-size: 14px;
+  background-color: #F7F7F7;
+}
+.tab-level1 ul {
+  *zoom: 1;
+  margin-bottom: 0px;
+  padding-left: 55px;
+}
+.tab-level1 ul:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.tab-level1 ul li {
+  position: relative;
+  height: 60px;
+  float: left;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 15px;
+}
+.tab-level1 ul li > a {
+  color: #000;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+}
+.tab-level1 ul li > a:hover {
+  color: #000000;
+}
+.tab-level1 ul li.on > a {
+  background-color: #3ea2d9;
+  color: #fff;
+}
+.tab-level1 ul li.on .arrow {
+  display: block;
+}
+.tab-level1 ul li .arrow {
+  display: none;
+}
+.tab-level1 ul li .arrow i {
+  border-bottom-color: #F7F7F7;
+}
+/*tab 二级*/
+.tab-level2 {
+  *zoom: 1;
+  height: 43px;
+  border-bottom: 1px solid #eaeaea;
+}
+.tab-level2:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.tab-level2 .tabs-handle {
+  *zoom: 1;
+  padding-left: 15px;
+  margin-right: 200px;
+  border-bottom: 1px solid #eee;
+}
+.tab-level2 .tabs-handle:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.tab-level2 .tabs-handle li {
+  background-color: #fff;
+  border-top: 3px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  line-height: 37px;
+  text-align: center;
+  width: 110px;
+}
+.tab-level2 .tabs-handle li.on {
+  border-top-color: #3ea2d9;
+  border-left-color: #eee;
+  border-right-color: #eee;
+  position: relative;
+  top: 1px;
 }

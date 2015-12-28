@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  1. 项目名称：传美打印
- 2. 文件名称：manage/templateSettings.less (模板设置)
+ 2. 文件名称：manage/addTemplate.less (新增模板)
  3. 作者：KingsleyYu
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -73,39 +73,81 @@
  2. 文件名称：pagination.less (分页器变量)
  3. 作者：zhaohuagang@guanaihui.com
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #fff;
+}
 .content .caption {
-  border-bottom: 1px solid #bbbbbb;
   padding-left: 20px;
   height: 55px;
+}
+.content .caption img {
+  margin-right: 5px;
 }
 .content .caption h3 {
   display: inline-block;
   *display: inline ;
   *zoom: 1 ;
   margin-right: 25px;
+  margin-top: 10px;
 }
 .content .caption a {
   margin-right: 10px;
 }
-.content .template-data {
-  padding-left: 40px;
-  padding-top: 20px;
+.content .tabs {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #bbbbbb;
+  height: 60px;
 }
-.content .template-data table {
-  width: 100%;
+.content .cond-items {
+  padding: 10px 0px 0px 55px;
+}
+.content .cond-items .item {
   font-size: 14px;
-  text-align: center;
-  border: 1px solid #000;
 }
-.content .template-data table tr {
+.content .cond-items .item > ul {
+  height: 50px;
+  *zoom: 1;
+}
+.content .cond-items .item > ul:after {
+  clear: both ;
+  content: " ";
+  display: block ;
+  font-size: 0 ;
+  height: 0 ;
+  visibility: hidden ;
+}
+.content .cond-items .item > ul li {
+  margin-right: 15px;
+  float: left;
+  line-height: 50px;
+}
+.content .cond-items .item-tpl li a {
   height: 30px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #000;
+  padding: 5px;
 }
-.content .template-data table td {
-  border: 1px solid #000;
+.content .cond-items .item-tpl li.on a {
+  background-color: #3ea2d9;
+  color: #fff;
 }
-.content .template-data table td.name {
-  width: 20%;
+.content .cond-items .dropdown-menu {
+  min-width: 100px;
 }
-.content .template-data table td.op {
-  width: 40%;
+.content .op {
+  border: 1px solid #bbbbbb;
+  height: 500px;
+}
+.content .op .pull-left {
+  width: 300px;
+  padding-left: 100px;
+  padding-top: 15%;
+}
+.content .op .pull-right {
+  margin: 5px 15px;
+  border: 1px solid #bbbbbb;
+  height: 450px;
+  width: 500px;
 }

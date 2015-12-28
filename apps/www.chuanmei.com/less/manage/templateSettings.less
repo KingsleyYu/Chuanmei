@@ -6,44 +6,40 @@
 
 @import "../mixins.less";
 @import "../variables.less";
-.wrapper {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    .aside {
-        background-color: #f1f1f1;
-        color: @default-font-color;
-        font-size: 16px;
-        width: 170px;
-        height: 500px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        
-        li {
-            padding: 10px 0 10px 20px;
-            &>a {
-                color: @default-font-color;
+
+.content {
+    .caption {
+        border-bottom: 1px solid #bbbbbb;
+        padding-left: 20px;
+        height: 55px;
+        h3 {
+            .inline-block();
+            margin-right: 25px;
+        }
+        a {
+            margin-right: 10px;
+        }
+    }
+    .template-data {
+        padding-left: 40px;
+        padding-top: 20px;
+        table {
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid #000;
+            tr {
+                height: 30px;
             }
-            &.on {
-                background-color: #3ea2d9;
-                &>a {
-                    color: #fff;
+            td {
+                border: 1px solid #000;
+                &.name {
+                    width: 20%
                 }
-            }
-            &:hover {
-                background-color: #3ea2d9;
-                &>a {
-                    color: #fff;
+                &.op {
+                    width: 40%;
                 }
             }
         }
-    }
-    .main {
-        background-color: #fff;
-        margin-left: 170px;
-        padding-left: 90px;
-        padding-top: 25px;
-        padding-bottom: 5px;
     }
 }

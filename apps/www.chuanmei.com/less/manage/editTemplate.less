@@ -1,0 +1,153 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：传美打印
+ 2. 文件名称：manage/editTemplate.less (编辑模板)
+ 3. 作者：KingsleyYu
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../mixins.less";
+@import "../variables.less";
+body {
+    background-color: #fff;
+}
+
+.content {
+    .caption {
+        padding-left: 20px;
+        height: 55px;
+        border-bottom: 1px solid #bbbbbb;
+        img {
+            margin-right: 5px;
+        }
+        h3 {
+            .inline-block();
+            margin-right: 25px;
+            margin-top: 10px;
+        }
+        a {
+            margin-right: 10px;
+        }
+    }
+    .cond-items {
+        padding: 10px 0px 0px 35px;
+        &>ul {
+            .clearfix();
+            &>li {
+                height: 40px;
+                float: left;
+                font-size: 14px;
+                line-height: 40px;
+                &.cond-label {
+                    width: 100px;
+                    text-align: right;
+                }
+                &>input {
+                    height: 30px;
+                    padding: 2px 5px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    .font {
+        border: 1px solid #bbbbbb;
+        padding-top: 5px;
+        &>ul {
+            .clearfix();
+            &>li {
+                height: 40px;
+                float: left;
+                font-size: 14px;
+                line-height: 40px;
+                &.cond-label {
+                    width: 100px;
+                    text-align: right;
+                }
+                &>input {
+                    height: 30px;
+                    padding: 2px 5px;
+                    line-height: 30px;
+                }
+                &.select-label {
+                    width: 160px;
+                }
+                .active-tpl {
+                    width: 80px;
+                    text-align: left;
+                }
+            }
+        }
+        .dropdown {
+            width: 90px;
+        }
+    }
+    .tpl {
+        margin-top: 5px;
+        height: 600px;
+        .clearfix();
+        &>.pull-left {
+            height: 600px;
+            border: 1px solid #bbbbbb;
+            width: 40%;
+            padding: 10px;
+            .tpl-content {
+                height: 580px;
+                border: 1px solid red;
+            }
+        }
+        .info {
+            width: 19%;
+            height: 600px;
+            float: left;
+            margin-left: 5px;
+            margin-right: 5px;
+            &>dl {
+                font-size: 14px;
+                text-align: center;
+                dt {
+                    .clearfix();
+                    height: 35px;
+                    &>div {
+                        height: 35px;
+                        text-align: center;
+                        line-height: 35px;
+                        margin-left: -30px;
+                    }
+                    &>.pull-left {
+                        width: 80%;
+                    }
+                    &>.pull-right {
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        background-color: #F7F7F7;
+                        cursor: pointer;
+                    }
+                }
+                dd {
+                    display: none;
+                    color: @gray-border-color;
+                    padding-left: 10px;
+                    &>span {
+                        margin-right: 20px;
+                    }
+                }
+                &.on {
+                    dt {
+                        background-color: #F7F7F7;
+                    }
+                    dd {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &>.pull-right {
+            height: 600px;
+            border: 1px solid #bbbbbb;
+            width: 40%;
+        }
+    }
+    .dropdown-menu {
+        min-width: 100px;
+    }
+}

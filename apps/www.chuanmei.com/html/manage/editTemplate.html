@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>编辑快递模板-传美打印</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--禁止浏览器在本地计算机缓存当前页面-->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 引入Bootstrap框架的stylesheet资源 -->
+    <link rel="stylesheet" href="../../../../build/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../apps/www.chuanmei.com/css/app.min.css">
+    <!-- 引入SUI框架的stylesheet资源 -->
+    <!--   <link rel="stylesheet" href="../../../../build/sui/css/sui.min.css">
+    <link rel="stylesheet" href="../../../../build/sui/css/sui-append.min.css"> -->
+    <!-- 引入当页对应的stylesheet资源 -->
+    <link rel="stylesheet" href="../../../../apps/www.chuanmei.com/css/manage/editTemplate.min.css">
+    <!--[if lte IE 6]>        
+        <link rel="stylesheet" type="text/css" href="../../../../build/bootstrap/plugins/bsie/bootstrap-ie6.min.css">        
+        <link rel="stylesheet" type="text/css" href="../../../../build/bootstrap/plugins/bsie/ie.min.css">
+        <![endif]-->
+</head>
+
+<body>
+    <!--页面顶部条-->
+    <div class="toper">
+        <div class="container">
+            <div class="btn-group">
+                <button class="btn btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>leoyuanxian</span> <span><i class="iconfont icon-xiangxia2"></i></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0)">leoyuanxian5</a></li>
+                    <li><a href="javascript:void(0)">leoyuanxian5</a></li>
+                    <li><a href="javascript:void(0)">leoyuanxian5</a></li>
+                    <li><a href="javascript:void(0)">leoyuanxian5</a></li>
+                </ul>
+            </div>
+            <a href="#" class="bind">多店绑定</a>
+            <div class="pull-right">
+                <ul>
+                    <li>
+                        <span>当前版本：</span>
+                        <span>标准版</span>
+                        <a href="#" class="op">续费优惠</a>
+                    </li>
+                    <li class="pipe">|</li>
+                    <li>
+                        <span>
+                            到期时间：
+                            </span>
+                        <span class="light">2016-12-01</span>
+                        <span>(</span>
+                        <span class="light">29</span>
+                        <span>)天</span>
+                    </li>
+                    <li class="pipe">|</li>
+                    <li>
+                        <span>剩余短信：</span>
+                        <span class="light">292条</span>
+                        <a href="#" class="op">充值</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--头部区域-->
+    <div class="header">
+        <div class="container">
+            <div class="logo-location">
+                <a href="#"><img src="../../../../apps/www.chuanmei.com/css/images/logo.png" alt="传美打印"></a>
+            </div>
+            <ul class="nav-bar">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">打印发货</a></li>
+                <li><a href="#">已发货订单</a></li>
+                <li><a href="#">自由打印</a></li>
+                <li>
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>更多功能</span><span><i class="iconfont icon-xiangxia2"></i></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">更多功能1</a></li>
+                            <li><a href="javascript:void(0)">更多功能2</a></li>
+                            <li><a href="javascript:void(0)">更多功能3</a></li>
+                            <li><a href="javascript:void(0)">更多功能4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>短信设置</span><span><i class="iconfont icon-xiangxia2"></i></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">短信设置1</a></li>
+                            <li><a href="javascript:void(0)">短信设置2</a></li>
+                            <li><a href="javascript:void(0)">短信设置3</a></li>
+                            <li><a href="javascript:void(0)">短信设置4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>评价管理</span><span><i class="iconfont icon-xiangxia2"></i></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">评价管理1</a></li>
+                            <li><a href="javascript:void(0)">评价管理2</a></li>
+                            <li><a href="javascript:void(0)">评价管理3</a></li>
+                            <li><a href="javascript:void(0)">评价管理4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>用户设置</span><span><i class="iconfont icon-xiangxia2"></i></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0)">用户设置1</a></li>
+                            <li><a href="javascript:void(0)">用户设置2</a></li>
+                            <li><a href="javascript:void(0)">用户设置3</a></li>
+                            <li><a href="javascript:void(0)">用户设置4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 内容区域 -->
+    <div class="container wrapper">
+        <!-- 左侧菜单 -->
+        <div class="aside">
+            <ul>
+                <li class="on"><a href="javascript:void(0)" data-href="./story.html">快递模板</a></li>
+                <li><a href="javascript:void(0)" data-href="./concept.html">发货单模板</a></li>
+                <li><a href="javascript:void(0)" data-href="./responsibility.html">店铺绑定</a></li>
+                <li><a href="javascript:void(0)" data-href="./advantage.html">宝贝简称</a></li>
+                <li><a href="javascript:void(0)" data-href="./culture.html">发件人信息</a></li>
+            </ul>
+        </div>
+        <!-- 右侧内容区域 -->
+        <div class="content">
+            <div class="caption">
+                <img src="../../../../apps/www.chuanmei.com/css/images/dayinji.png" alt="传美打印">
+                <h3>编辑模板</h3>
+                <a href="#" class="cm_btn cm_btn_info cm_btn_large">返回</a>
+                <a href="#" class="cm_btn cm_btn_success cm_btn_large">保存模板</a>
+            </div>
+            <div class="cond-items">
+                <ul>
+                    <li class="cond-label">模板名称：</li>
+                    <li>
+                        <input type="text">
+                    </li>
+                    <li class="cond-label">快递公司：</li>
+                    <li>
+                        <input type="text">
+                    </li>
+                </ul>
+                <ul>
+                    <li class="cond-label">模板尺寸：</li>
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-sm dropdown-toggle cm_btn_pd" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>模板尺寸</span> <i class="iconfont icon-xiangxia2"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">模板尺寸1</a></li>
+                                <li><a href="javascript:void(0)">模板尺寸2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cond-label">宽：</li>
+                    <li>
+                        <input type="text">
+                    </li>
+                    <li class="cond-label">高：</li>
+                    <li>
+                        <input type="text">
+                    </li>
+                </ul>
+                <ul>
+                    <li class="cond-label">面单账号：</li>
+                    <li>
+                        <input type="text">
+                    </li>
+                    <li class="cond-label">面单密码：</li>
+                    <li>
+                        <input type="text">
+                    </li>
+                    <li class="cond-label">发放网店：</li>
+                    <li>
+                        <input type="text">
+                    </li>
+                </ul>
+            </div>
+            <!-- 字体设置 -->
+            <div class="font">
+                <ul>
+                    <li class="cond-label select-label">当前选中模板：</li>
+                    <li>
+                        <span class="avtive-tpl">xxxxxx</span>
+                    </li>
+                    <li class="cond-label">字体：</li>
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-sm dropdown-toggle cm_btn_pd" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>标准尺寸</span> <i class="iconfont icon-xiangxia2"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">标准尺寸1</a></li>
+                                <li><a href="javascript:void(0)">标准尺寸2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cond-label">字号：</li>
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-sm dropdown-toggle cm_btn_pd" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>标准尺寸</span> <i class="iconfont icon-xiangxia2"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">标准尺寸1</a></li>
+                                <li><a href="javascript:void(0)">标准尺寸2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cond-label">加粗：</li>
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-sm dropdown-toggle cm_btn_pd" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>标准尺寸</span> <i class="iconfont icon-xiangxia2"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">标准尺寸1</a></li>
+                                <li><a href="javascript:void(0)">标准尺寸2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 常用控件 -->
+            <div class="tpl">
+                <div class="pull-left">
+                    <div class="tpl-content">
+                    </div>
+                </div>
+                <div class="info">
+                    <dl class="on">
+                        <dt>
+                            <div class="pull-left">
+                                常用控件
+                            </div>
+                            <div class="pull-right">
+                                <a href="javascript:void(0)">-</a>
+                            </div>
+                        </dt>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <div class="pull-left">
+                                买家信息
+                            </div>
+                            <div class="pull-right">
+                                <a href="javascript:void(0)">+</a>
+                            </div>
+                        </dt>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <div class="pull-left">
+                                订单信息
+                            </div>
+                            <div class="pull-right">
+                                <a href="javascript:void(0)">+</a>
+                            </div>
+                        </dt>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                        <dd><span>买家信息</span> <a href="javascript:void(0)">添加</a></dd>
+                    </dl>
+                </div>
+                <div class="pull-right">
+                    <p style="font-size: 18px;color: red;font-weight: 600px;text-align: center;">不要超过红框</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[if IE 6]>
+        <script src="../../../../build/js/compatible/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script> DD_belatedPNG.fix('.pngfix'); </script>
+        <script type=”text/javascript”>  
+        // <![CDATA[ 
+        if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand)) 
+        try{ 
+        document.execCommand("BackgroundImageCache", false, true); 
+        } 
+        catch(e){} 
+        // ]]>  
+        </script>
+        <![endif]-->
+    <!--[if lte IE 6]>        
+        <script type="text/javascript" src="../../../../build/bootstrap/plugins/bsie/bootstrap-ie.min.js"></script>
+        <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="../../../../build/js/compatible/html5shiv.min.js"></script>
+        <script src="../../../../build/js/compatible/respond.min.js"></script>
+        <![endif]-->
+    <script src="../../../../apps/www.chuanmei.com/js/app.min.js"></script>
+    <script src="../../../../apps/www.chuanmei.com/jssrc/manage/editTemplate.js"></script>
+</body>
+
+</html>

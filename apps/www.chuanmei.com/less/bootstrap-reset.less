@@ -43,3 +43,44 @@
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+
+.wrapper {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    .aside {
+        background-color: #f1f1f1;
+        color: @default-font-color;
+        font-size: 16px;
+        width: 170px;
+        height: 500px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        li {
+            padding: 10px 0 10px 20px;
+            &>a {
+                color: @default-font-color;
+            }
+            &.on {
+                background-color: #3ea2d9;
+                &>a {
+                    color: #fff;
+                }
+            }
+            &:hover {
+                background-color: #3ea2d9;
+                &>a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .content {
+        background-color: #fff;
+        margin-left: 175px;
+        padding-bottom: 5px;
+    }
+}

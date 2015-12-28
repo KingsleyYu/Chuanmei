@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>模板设置-传美打印</title>
+    <title>新增快递模板-传美打印</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <!--禁止浏览器在本地计算机缓存当前页面-->
@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="../../../../build/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../../apps/www.chuanmei.com/css/app.min.css">
     <!-- 引入SUI框架的stylesheet资源 -->
-    <link rel="stylesheet" href="../../../../build/sui/css/sui.min.css">
-    <link rel="stylesheet" href="../../../../build/sui/css/sui-append.min.css">
+    <!--   <link rel="stylesheet" href="../../../../build/sui/css/sui.min.css">
+    <link rel="stylesheet" href="../../../../build/sui/css/sui-append.min.css"> -->
     <!-- 引入当页对应的stylesheet资源 -->
-    <link rel="stylesheet" href="../../../../apps/www.chuanmei.com/css/manage/templateSettings.min.css">
+    <link rel="stylesheet" href="../../../../apps/www.chuanmei.com/css/manage/addTemplate.min.css">
     <!--[if lte IE 6]>        
         <link rel="stylesheet" type="text/css" href="../../../../build/bootstrap/plugins/bsie/bootstrap-ie6.min.css">        
         <link rel="stylesheet" type="text/css" href="../../../../build/bootstrap/plugins/bsie/ie.min.css">
@@ -150,69 +150,83 @@
         <div class="content">
             <div class="caption">
                 <img src="../../../../apps/www.chuanmei.com/css/images/dayinji.png" alt="传美打印">
-                <h3>快递模板</h3>
-                <a href="#" class="cm_btn cm_btn_success cm_btn_large">新增模板</a>
-                <a href="#" class="cm_btn cm_btn_success cm_btn_large">设置省份默认快递</a>
+                <h3>新增模板</h3>
+                <a href="#" class="cm_btn cm_btn_info cm_btn_large">返回</a>
+                <a href="#" class="cm_btn cm_btn_success cm_btn_large">添加到我的模板</a>
             </div>
-            <div class="template-data">
-                <table>
-                    <thead>
-                        <tr>
-                            <td class="name">快递模板名称</td>
-                            <td>尺寸</td>
-                            <td>快递公司</td>
-                            <td>设置运费</td>
-                            <td class="op">操作</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="tabs">
+                <div class="tab-level1">
+                    <ul>
+                        <li class="on">
+                            <a href="javascript:void(0)">电子面单</a>
+                        </li>
+                        <li class="">
+                            <a href="javascript:void(0)">普通面单</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cond-items">
+                <div class="item">
+                    <ul>
+                        <li>快递公司：</li>
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn btn-default btn-sm dropdown-toggle cm_btn_pd" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>中通快递</span> <i class="iconfont icon-xiangxia2"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)">圆通快递</a></li>
+                                    <li><a href="javascript:void(0)">申通快递</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item item-tpl">
+                    <ul>
+                        <li>快递模板：</li>
+                        <li class="on"><a href="javascript:void(0)">2015xx模板</a></li>
+                        <li class=""><a href="javascript:void(0)">2014xx模板</a></li>
+                        <li class=""><a href="javascript:void(0)">2013xx模板</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="op">
+                <div class="pull-left">
+                    <a href="#" class="cm_btn cm_btn_success cm_btn_large">添加到我的模板</a>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#" class="cm_btn cm_btn_success cm_btn_large">修改我的模板</a>
+                </div>
+                <div class="pull-right">
+
+                </div>
             </div>
         </div>
     </div>
+    <!--[if IE 6]>
+        <script src="../../../../build/js/compatible/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script> DD_belatedPNG.fix('.pngfix'); </script>
+        <script type=”text/javascript”>  
+        // <![CDATA[ 
+        if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand)) 
+        try{ 
+        document.execCommand("BackgroundImageCache", false, true); 
+        } 
+        catch(e){} 
+        // ]]>  
+        </script>
+        <![endif]-->
+    <!--[if lte IE 6]>        
+        <script type="text/javascript" src="../../../../build/bootstrap/plugins/bsie/bootstrap-ie.min.js"></script>
+        <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="../../../../build/js/compatible/html5shiv.min.js"></script>
+        <script src="../../../../build/js/compatible/respond.min.js"></script>
+        <![endif]-->
+    <script src="../../../../apps/www.chuanmei.com/js/app.min.js"></script>
 </body>
 
 </html>
