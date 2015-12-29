@@ -42,7 +42,7 @@ IndexController.prototype.initDropdown = function() {
 
         //对于宝贝名称点击事件的特殊处理
         if (_this.data('type') === 'gift') {
-            if (_this.data('value') =='1') {
+            if (_this.data('value') == '1') {
                 $(".filter-panel").find(".conds-item-bbmc input").show().css("width", "119px");
             } else {
                 $(".filter-panel").find(".conds-item-bbmc input:first").show().css("width", "255px");
@@ -210,7 +210,7 @@ IndexController.prototype.initDataPanel = function() {
 
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    切换订单类型
+切换订单类型
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 IndexController.prototype.switchCategory = function() {
     $(".category li").on("click", function() {
@@ -226,28 +226,30 @@ IndexController.prototype.switchCategory = function() {
 IndexController.prototype.optionsChange = function() {
     $(".filter-item .btn-group").find("a").on('click', function() {
         var _this = $(this);
-        if (_this.hasClass('on')) {
-            _this.removeClass('on');
-            _this.removeClass('active');
-        };
-
+       
         if (_this.hasClass('filter-item-all')) {
-            _this.parent().parent().find('.btn-group a').removeClass('on');
-            _this.parent().parent().find('.btn-group').removeClass('active');
-            _this.addClass('btn-primary');
-        }
-        _this.parent().removeClass('active').find("a").removeClass('on');
-        _this.addClass('on');
-        _this.parent().addClass('active');
 
-        //判断是否全部按钮选中
-        if (_this.parent().parent().find('.btn-group a').length === _this.parent().parent().find('.btn-group a.on').length - 1) {
-            _this.parent().parent().find('.btn-group a').removeClass('on');
-            _this.parent().parent().find('.btn-group').removeClass('active');
-            _this.parent().parent().find('.btn-group a.filter-item-all').addClass('btn-primary');
+            if (!_this.hasClass('on')) {
+                _this.parent().parent().find('.btn-group a').removeClass('on');
+                _this.addClass('on');
+            }
         } else {
-            _this.parent().parent().find('.btn-group a.filter-item-all').removeClass('btn-primary');
+            if (_this.hasClass('on')) {
+                _this.removeClass('on');
+            } else {
+                _this.addClass('on');
+            }
+
+            //判断是否全部按钮选中
+            if (_this.parent().parent().find('.btn-group a').length === _this.parent().parent().find('.btn-group a.on').length + 1) {
+                _this.parent().parent().find('.btn-group a').removeClass('on');
+                _this.parent().parent().find('.btn-group').removeClass('active');
+                _this.parent().parent().find('.btn-group a.filter-item-all').addClass('btn-primary').addClass('on');
+            } else {
+                _this.parent().parent().find('.btn-group a.filter-item-all').removeClass('btn-primary').removeClass('on');
+            }
         }
+
     });
 
     $(".btn-group,.input-group-btn").on("click", function() {
