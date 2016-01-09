@@ -143,8 +143,8 @@ body {
                 &.conds-item {
                     width: 350px;
                     .dropdown-menu {
-                        min-width: 50px;
-                        width: 100px;
+                        min-width: 100px;
+                        /*width: 100px;*/
                         &>li {
                             &>a {
                                 padding: 3px 15px;
@@ -199,6 +199,10 @@ body {
             .type {
                 width: 75px;
             }
+        }
+
+        .reset{
+            margin-top: -3px;
         }
     }
 }
@@ -469,9 +473,19 @@ body {
                     top: -2px;
                     left: 8px;
                     filter: alpha(opacity=80);
-                    opacity: 0.7;
+                    opacity: 0.5;
                     overflow: hidden;
                     background-color: #000;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        margin:auto;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                    }
                 }
             }
             .detail {

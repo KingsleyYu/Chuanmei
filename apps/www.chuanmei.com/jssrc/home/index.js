@@ -38,7 +38,17 @@ function IndexController() {
 IndexController.prototype.initDropdown = function() {
     $(".dropdown-menu li a").on('click', function(event) {
         var _this = $(this);
-        _this.parent().parent().siblings('.btn').find('span:first').html(_this.html());
+
+        //对于长度大于6的需要截断显示省略号
+
+        if (_this.html().length > 9) {
+            var str = _this.html().substring(0, 9);
+            _this.parent().parent().siblings('.btn').find('span:first').html(str + "...");
+
+        } else {
+            _this.parent().parent().siblings('.btn').find('span:first').html(_this.html());
+        }
+
 
         //对于宝贝名称点击事件的特殊处理
         if (_this.data('type') === 'gift') {
@@ -50,6 +60,22 @@ IndexController.prototype.initDropdown = function() {
             }
         }
     });
+
+    //对于省市下拉框的特殊处理
+
+    $("#drpArea").on('hide.bs.dropdown', function() {
+        var _this = $(this);
+
+        _this.find("ul li a").each(function(index, el) {
+            if ($(el).html().length > 15) {
+                _this.find("ul").css({
+                    "margin-left": _this.find("button").width() - _this.find("ul").width() + 20
+                });
+
+                return;
+            }
+        });
+    })
 };
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -122,7 +148,7 @@ IndexController.prototype.showMoreConds = function() {
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 显示产品详情
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ -------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------*/
 IndexController.prototype.showProductDetail = function() {
     $(".data-panel .btnShowDetail").on('click', function() {
         var _this = $(this);
@@ -226,7 +252,7 @@ IndexController.prototype.switchCategory = function() {
 IndexController.prototype.optionsChange = function() {
     $(".filter-item .btn-group").find("a").on('click', function() {
         var _this = $(this);
-       
+
         if (_this.hasClass('filter-item-all')) {
 
             if (!_this.hasClass('on')) {
@@ -280,4 +306,5 @@ IndexController.prototype.showMenu = function() {
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 $(document).ready(function() {
     new IndexController;
+
 });
