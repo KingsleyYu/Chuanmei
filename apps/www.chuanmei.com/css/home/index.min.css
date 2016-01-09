@@ -243,10 +243,13 @@ body {
 }
 .filter-panel > div > ul > li.conds-item .dropdown-menu {
   min-width: 100px;
-  /*width: 100px;*/
 }
 .filter-panel > div > ul > li.conds-item .dropdown-menu > li > a {
   padding: 3px 15px;
+}
+.filter-panel > div > ul > li.conds-item .province,
+.filter-panel > div > ul > li.conds-item .order {
+  width: 95px;
 }
 .filter-panel > div > ul > li.conds-item-mobile {
   width: 225px;

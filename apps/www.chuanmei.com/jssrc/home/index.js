@@ -41,8 +41,8 @@ IndexController.prototype.initDropdown = function() {
 
         //对于长度大于6的需要截断显示省略号
 
-        if (_this.html().length > 9) {
-            var str = _this.html().substring(0, 9);
+        if (_this.html().length > 4) {
+            var str = _this.html().substring(0, 4);
             _this.parent().parent().siblings('.btn').find('span:first').html(str + "...");
 
         } else {
